@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/img_user"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        tools:src ="@drawable/user1"
+        />
+    <TextView
+        android:id="@+id/txtusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_toEndOf="@+id/img_user"
+        android:textSize="18sp"
+        tools:text="Username"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtusername"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/img_user"
+        android:ellipsize="end"
+        android:fontFamily="serif"
+        android:maxLines="3"
+        android:text="Name"
+        android:textSize="10sp" />
+
+   <TextView
+       android:id="@+id/txtlocation"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/txtname"
+       android:layout_marginStart="26dp"
+       android:layout_marginTop="10dp"
+       android:layout_toEndOf="@+id/img_user"
+       android:ellipsize="end"
+       android:maxLines="3"
+       android:textSize="10sp"
+       android:text="location"/>
+
+    <TextView
+        android:id="@+id/txtrepository"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtlocation"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/img_user"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textSize="10sp"
+        android:text="repository"/>
+
+    <TextView
+        android:id="@+id/txtcompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtrepository"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/img_user"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textSize="10sp"
+        android:text="company"/>
+
+    <TextView
+        android:id="@+id/txtfollowers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtcompany"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/img_user"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textSize="10sp"
+        android:text="followers"/>
+
+    <TextView
+        android:id="@+id/txtfollowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtfollowers"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/img_user"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textSize="10sp"
+        android:text="following"/>
+
+
+
+
+
+</RelativeLayout>
